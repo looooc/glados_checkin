@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '*/2 */2 * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   checkin:
@@ -38,4 +38,4 @@ jobs:
         python -m pip install requests json
     - name: Test with pytest
       run: |
-        pytest
+        pytest.py
