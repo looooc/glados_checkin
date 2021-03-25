@@ -23,6 +23,6 @@ jobs:
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: pip install requests json
+      run: pip install -r ./requirements.txt
     - name: Test with pytest
       run: python pytest.py
